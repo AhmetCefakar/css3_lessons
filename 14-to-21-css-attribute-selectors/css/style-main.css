@@ -1,0 +1,35 @@
+
+/*Attribute sahip etiketlere css verme işlemi*/
+p span[title]{
+    color: rosybrown;
+}
+
+/*Attribute değerine sahip etiketlere css verme işlemi*/
+p span[title="asdxyz"]{
+    color: skyblue;
+}
+
+/*Attribute değeri ... ile başlayan etiketlere css verme işlemi(verilen metinden sonra '-' karakteri dışında başka karakter gelirse ilgili etiketlere css uygulanmaz)*/
+p span[class|="box"]{
+    color: tomato;
+}
+
+/*Attribute değeri ... ile başlayan etiketlere css verme işlemi(verilen metinden sonra hangi karakter(ler) gelirse gelsin ilgili etiketlere css uygulanır)*/
+p span[class^="box"]{
+    color: red;
+}
+
+/*Attribute değeri ... ile biten etiketlere css verme işlemi(verilen metinden önce hangi karakter(ler) gelirse gelsin ilgili etiketlere css uygulanır)*/
+div[class$="box"]{
+    color: violet;
+}
+
+/*Attribute değerinde ... geçen etiketlere css verme işlemi(büyük-küçük harf duyarlı olarak çalışır)*/
+div span[title*="asdf"]{
+    background-color: yellowgreen;
+}
+
+/*Attribute değerinde ... geçen etiketlere css verme işlemi(büyük-küçük harf duyarsız olarak çalışır)[sona eklenen 'i' case in sensitive anlamına gelir]*/
+div span[title*="asxy" i]{
+    background-color: blue;
+}

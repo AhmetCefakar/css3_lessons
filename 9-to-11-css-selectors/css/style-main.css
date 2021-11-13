@@ -1,0 +1,15 @@
+
+/*Group seçici kullanımı*/
+/* p, h2, h3, span{
+    background-color: papayawhip;
+} */
+
+/* Torun seçiciler arada boşluk bırakılarak tanımlanıyor */
+/* div .grandchild{
+    color: palevioletred;
+} */
+
+/* Çocuk seçiciler arada '>' bırakılarak tanımlanıyor */
+div > .grandchild{
+    color: palevioletred;
+}

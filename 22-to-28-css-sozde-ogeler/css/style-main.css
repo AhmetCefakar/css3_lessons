@@ -1,0 +1,49 @@
+/*'::after', '::before' tanımlamaları genellikle elemanın sonuna ok işareti eklemek vb. işlemler için kullanılıyor*/
+/* Css'teki 'attr()' fonksiyonuyla hedef etiketteki attribute'ün değeri alınabiliyor */
+
+/* '::after', '::before' tanımlamaları 'content' özelliğiyle birlikte kullanılmalıdır */
+div.after-pseudo-item{
+    color: blueviolet;
+}
+
+div.before-pseudo-item::before{
+    content: 'Before pseudo item';
+    color: deeppink;
+}
+
+div.after-pseudo-item::after{
+    /* content: 'After pseudo item'; */
+    content: attr(title);
+    color: brown;
+}
+
+a[target="_blank"]::after{
+    content: '(' attr(href) ')';
+}
+
+p.firstlatter-pseudo-item::first-letter{
+    color: turquoise;
+    font-size: 47px;
+}
+
+p.firstline-pseudo-item::first-line{
+    color: violet;
+    background-color: wheat;
+}
+
+/*Sayfada fare imleciyle seçilen alanlara style vermek için kullanılan sözde sınııftır, belirli bir atiket için de kullanılabilir*/
+::selection{
+    background-color: turquoise;
+    color: white;
+}
+
+/* '::placeholder' sözde öğesi ile 'placeholder'a style verilebiliyor  */
+input::placeholder{
+    color: yellowgreen;
+    font-size: 1em;
+}
+
+textarea::placeholder{
+    color: aquamarine;
+    font-size: 3em;
+}

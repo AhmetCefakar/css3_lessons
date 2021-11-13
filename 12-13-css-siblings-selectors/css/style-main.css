@@ -1,0 +1,20 @@
+
+/* Siblings '+' seçicisiyle hemen sonra gelen eleman için seçme yapılır */
+/* 
+h3 + p{
+    color: peru;
+}
+
+h3 + p span{
+    background-color: plum;
+}
+
+div + p span {
+    color: red;
+} 
+*/
+
+/* Siblings '~' seçicisiyle sonra gelen tüm elemanlar için seçme yapılır */
+h3 ~ p{
+    color: pink;
+}

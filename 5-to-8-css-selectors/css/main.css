@@ -1,0 +1,46 @@
+/*Evrensel secici: '*' dir. tarayıcı farkından dolayı css sıfırlama işlemi yapmak için evrensel secici kullanılır */
+*{
+    color: pink;
+}
+
+/*Bu şekilde 'div' etiketi altındaki tüm etiketlere css tanımlaması yapılmış olur*/
+div *{
+    color: palegoldenrod;
+}
+
+/* Etiket secici kullanımı
+h2{
+    color: lime;
+}
+
+p {
+    color: magenta;
+}
+
+span{
+    color: mediumblue;
+}
+
+div{
+    color: midnightblue;
+}
+
+ul > li{
+    background-color: slategrey;
+}
+*/
+
+/* 'id' seçicisi, bir dokümanda aynı 'id' değeri sadece bir kere geçmelidir  */
+/* Bir etiket seçicisindeki 'id' değeri ile style verilmek isteniyorsa '#' karakteri bitişik yazılmalıdır */
+p#first-p{
+    color: lightblue;
+}
+
+/* 'class' seçicisi */
+.colour-blue{
+    color: blue;
+}
+
+.text-bold{
+    font-weight: bold;
+}

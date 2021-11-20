@@ -1,0 +1,18 @@
+/*
+ * ":only-child" sözde sınıfının tanımlandığı etiken eğer ilgili aralıkta sadece bir adet varsa style uygulanır
+ * ":only-of-type" sözde sınıfı ile etiket türüne göre ilk eleman seçilecek şekilde tanımlama yapılabilir.
+ * 
+ * 
+*/
+
+li:only-child{
+  color: turquoise;
+}
+
+.test01:only-child{
+  color: blueviolet;
+}
+
+.test02:only-of-type{
+  color: blue;
+}

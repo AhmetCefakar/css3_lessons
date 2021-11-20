@@ -1,0 +1,17 @@
+/*
+ * ":not" sözde sınıfı ile belirli bir tanımlamayı içermeyen etiketler seçilip bu etiketlere style uygulanabilir
+ *
+ *
+*/
+
+abbr:not([title]){
+  background-color: blueviolet;
+}
+
+abbr:not([title]):not(.box-01){
+  background-color: brown;
+}
+
+abbr#titli-01:not([title]):not(.box-01){
+  background-color: darkgreen;
+}

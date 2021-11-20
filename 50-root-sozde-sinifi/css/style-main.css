@@ -1,0 +1,18 @@
+/*
+ * ":root" sözde sınıfının sayfadaki kapsayıcılığı body ve html etiketlerinden daha yüksektir.
+ * ":root > html tag > body tag" şeklinde bir kapsama kademelenmesi vardır.
+ * 
+*/
+
+:root{
+  background-color: turquoise;
+}
+
+html{
+  background-color: yellow;
+}
+
+body{
+  background-color: violet;
+}
+

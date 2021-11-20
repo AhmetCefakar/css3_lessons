@@ -1,0 +1,22 @@
+input[type="radio"]:checked + span{
+  color: red;
+}
+
+
+#cd{
+  display: none;
+}
+
+#my-checkbox-label::after{
+  content: attr(data-hide);
+  background-color: seagreen;
+}
+
+#cd:checked + #my-checkbox-label::after{
+  content: attr(data-show);
+  background-color: turquoise;
+}
+
+#cd:checked + #my-checkbox-label + .box{
+  display: none;
+}

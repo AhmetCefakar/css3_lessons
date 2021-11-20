@@ -1,0 +1,13 @@
+/**/
+.my-list li:first-child{
+    background-color: aquamarine;
+}
+
+div ul:first-child{
+    background-color: blueviolet;
+}
+
+/*Bu kullanımı anlamak biraz zor olabilir ama kısaca ebevey etiken önemlidir css'in etkin olabilmesi için*/
+div:first-child{
+    background-color: green;
+}

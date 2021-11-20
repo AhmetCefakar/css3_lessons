@@ -1,0 +1,8 @@
+/*
+ * ":target" sözde sınıfı ile sayfa içi linke gidildiğinde gidilen elemana style uygulanabiliyor.
+ * 
+*/
+
+p:target{
+  background-color: turquoise;
+}

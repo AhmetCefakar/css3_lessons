@@ -1,0 +1,24 @@
+/*
+ * ":link", ":active", ":visited", ":any-link" sözde sınıfı ile link'ler için özel style uygulanabilir.
+ * 
+ *
+*/
+
+.class-01 a:link {
+  background-color: turquoise !important;
+  color: fuchsia;
+}
+
+.class-02 a:active {
+  background-color: tomato !important;
+  color: tomato;
+}
+
+.class-02 a:visited {
+  background-color: coral !important;
+  color: rgb(145, 139, 145);
+}
+
+.class-any-link-example a:any-link {
+  background-color: chartreuse;
+}

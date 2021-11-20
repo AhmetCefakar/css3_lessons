@@ -1,0 +1,28 @@
+/*
+ * ":valid" ve ":invalid" sözde sınıfları ile input elemanlarının doğruluk durumuna göre style uygulanabilir.
+ * Alttaki gibi kullanımlar tanımlanabilir
+ *
+*/
+
+input:valid {
+  border-color: darkgreen;
+}
+
+input:valid + span::after {
+  content: "✔️";
+  color: darkgreen;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:invalid + span::after {
+  content: "❌";
+  color: red;
+}
+
+/* 
+input[type="text"]:focus{
+  outline: none;
+} */

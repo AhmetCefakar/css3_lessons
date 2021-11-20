@@ -1,0 +1,18 @@
+/*
+ * ":empty" sözde sınıfı ile içeiği hiç olmayan etiketler seçilip style uygulanabilir.
+ * Alttaki gibi kullanımlar tanımlanabilir
+ *
+*/
+
+li:empty{
+  display: none;
+}
+
+#content:empty{
+  display: none;
+}
+
+#content:not(:empty) ~ #global-loading{
+  display: none;
+}
+

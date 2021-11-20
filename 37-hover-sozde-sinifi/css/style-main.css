@@ -1,0 +1,23 @@
+ul li:hover {
+  background-color: limegreen;
+}
+
+a:hover {
+  background-color: magenta;
+}
+
+div span:hover {
+  background-color: maroon;
+}
+
+a:last-of-type{
+    background-color: turquoise;
+}
+
+a:last-of-type::after {
+  content: "( " attr(href) " ) ";
+}
+
+a:last-of-type:hover::after{
+    display: none;
+}

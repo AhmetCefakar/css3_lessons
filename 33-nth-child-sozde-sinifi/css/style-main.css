@@ -1,0 +1,13 @@
+/*
+    ':nth-child()' sözde sınıfında indexler 1'den başlar!
+    ':nth-child()' sözde sınıfı kullanarak n. sıradaki eleman seçilip css atama işlemi yapılabilir.
+    'nth-child(odd)' kullanımı ile tek sıra sayısındaki elemanlar seçilmiş olur.
+    'nth-child(even)' kullanımı ile çift sıra sayısındaki elemanlar seçilmiş olur.
+    ':nth-child(4n-1), :nth-child(3n), :nth-child(3n-2), :nth-child(-n+6)' şeklinde seçme işlemi de uygulanabiliyor, burda kullanma mantığı: 'n' değerine 0'dan başlanarak artan değerlerde sayılar verilir ve bu değerlere karşılık gelen sıradaki elemena ilgili css uygulanır
+    'ul li:nth-child(n+4):nth-child(-n+8)' şeklinde iki defa kullanarak aralık seçme işlemi de yapılabilir!
+*/
+
+/*Alttaki kullanım ile iki kural arasında çift sıradaki alamanlara css uygulanır*/
+ul li:nth-child(n+4):nth-child(even):nth-child(-n+8){   
+    color: turquoise;
+}

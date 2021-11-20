@@ -1,0 +1,20 @@
+/* 
+    'first-of-type' kullanımı 'firt-child' sözde sınıfının muadili olan etikettir, etiketin türüne göre çalışan sözde sınıftır.
+    'firt-child' yerine 'first-of-type' kullanmak daha sağlıklıdır.
+    Aynı dırım 'last-of-type' kullanımı 'last-child' sözde sınıfları için de geçerlidir.
+*/
+
+/*'my-list' sınıfına sahip olan etiketlerin ilk bulunan 'li' cocuğuna css etki edecektir*/
+.my-list li:first-of-type{
+    background-color: tomato;
+}
+
+/* 'div' etiketlerinin altında ilk bulunan 'ul' etiketine(yani ilk 2ul' çocuğuna) verilen css etki edecektir*/
+div ul:first-of-type{
+    background-color: blueviolet;
+}
+
+/*'body' altında bulunan ilk 'div' etiketine css uygulanır*/
+div:first-of-type{
+    background-color: turquoise;
+}

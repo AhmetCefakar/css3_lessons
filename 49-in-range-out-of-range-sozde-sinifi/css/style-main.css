@@ -1,0 +1,16 @@
+/*
+ * ":in-range", ":out-of-range" sözde sınıfı türü sayı olan form elenları için kullanılır.
+ * ":in-range" yerine ":valid" ve ":out-of-range" yerine de ":invalid" sözde sınıfı kullanılabilir, aynı işi yapıyorlar.
+ * 
+*/
+
+.box-01 input[type="number"]:in-range{
+  background-color: green;
+  color: antiquewhite;
+}
+
+.box-01 input[type="number"]:out-of-range{
+  background-color: tomato;
+  color: antiquewhite;
+}
+

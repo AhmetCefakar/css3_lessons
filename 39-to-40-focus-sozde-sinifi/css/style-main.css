@@ -1,0 +1,30 @@
+/*
+ * ':focus' posuedo sınıfı varsayılanda sadece form elemenlarında geçerlidir ama 'tabindex' değeri verilmiş etiketlere odaklanma özelliği verilebiliyor.
+ * ':focus-within' posuedo sınıfı ile bu özellik verilmiş olan elemanın alt elemanlarından birine odaklanıldığında alacağı style tanımlanır
+*/
+
+:focus{
+  outline: none; /*Bu tanımlama ile odaklanılan elemanı çevreleyen dış çizginin çıkmaması sağlanıyor*/
+}
+
+button:focus{
+  background-color: aquamarine;
+  color: blueviolet;
+}
+
+input:focus{
+  color: aquamarine;
+  border-color: red;
+}
+
+div:focus{
+  background-color: red;
+}
+
+p:focus{
+  background-color: red;
+}
+
+div:focus-within{
+  background-color: turquoise;
+}

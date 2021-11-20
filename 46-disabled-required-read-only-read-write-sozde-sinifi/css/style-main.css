@@ -1,0 +1,31 @@
+/*
+ * ":disabled", ":enabled", ":required", ":optional", ":read-only", ":read-write" sözde sınıfı ile input elemanları belli durumlara göre seçilip style uygulanabilir.
+ * 
+ *
+*/
+
+.input-class-01:disabled {
+  background-color: tomato;
+}
+
+.input-class-01:enabled {
+  background-color: turquoise;
+}
+
+
+.input-class-02:required {
+  background-color: tomato;
+}
+
+.input-class-02:optional {
+  background-color: turquoise;
+}
+
+
+.input-class-03:read-only {
+  background-color: tomato;
+}
+
+.input-class-03:read-write {
+  background-color: turquoise;
+}

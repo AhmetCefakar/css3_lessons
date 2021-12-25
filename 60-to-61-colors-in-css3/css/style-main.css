@@ -1,0 +1,12 @@
+/*
+ * 'color' değeri dört farklı şekilde yazılabiliyor: 1) Renk adı, 2) #Hex kod değeri, 3)RGB değeri kullanmak, 4) HSL değeri kullanımı 
+ */
+
+div.box-01 {
+  background-color: mediumturquoise;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  color: rgba(152, 23, 143, .9);
+  color: hsla(293, 36%, 51%, .9);
+}

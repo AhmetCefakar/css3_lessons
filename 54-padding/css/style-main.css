@@ -1,0 +1,22 @@
+/*
+ * "paddng" tanımlaması blok seviyesindeki elemanlarda dört mesafe için de kullanılabilir ama satır içi elemanlarda sadece sağ ve soldan olacak şekilde kullanılması sorunsuz olurken yukarıdan/aşağıdan boşluk verince taşma durumları oluşuyor(çözmek için başka css tanımlamaları kullanılması gerekiyor)
+ * "paddng" tanımlaması bir elemanın ebeveyn'ine olan elemana göre iç boşluk mesafesi vermek için kullanılır.
+ * Kısaca iç boşluk vermek için kullanılıyor.
+ * 
+*/
+
+span{
+  background-color: mediumvioletred;
+  padding: 0 70px;
+}
+
+div.box-01{
+  background-color: mediumturquoise;
+  width: 250px;
+  height: 300px;
+  padding-top: 90px;
+  padding-right: 70px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+

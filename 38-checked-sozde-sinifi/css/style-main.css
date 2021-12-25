@@ -2,9 +2,12 @@ input[type="radio"]:checked + span{
   color: red;
 }
 
-
 #cd{
   display: none;
+}
+
+#my-checkbox-label{
+  cursor: pointer;
 }
 
 #my-checkbox-label::after{

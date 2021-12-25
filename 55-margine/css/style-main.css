@@ -1,0 +1,11 @@
+/*
+ * "margin" tanımlaması blok seviyesindeki elemanlarda dört mesafe için de kullanılabiliyor ama satır içi elemanlarda sadece 'margin-left' ve 'margin-right' kullanılabiliyor.
+*/
+
+div.box-01 {
+  background-color: mediumturquoise;
+  width: 250px;
+  height: 300px;
+  margin: 70px; /*tekli, ikili, üçlü ve dörtlü parametreyle kullanımı da vardır */
+  margin: 0 auto 50px; /* 'margin'in bu kullanımı ile div içerikleri kapsayısının içinde yatayda ortalanabiliyor "text-align: center;" işe yaramıyor bunun için*/
+}

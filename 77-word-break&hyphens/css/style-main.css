@@ -1,0 +1,20 @@
+/*
+ * 'hyphens' özelliği ile etiketin genişliğine sığmayan satırlardaki metinler kesme işaretiyle alt satırlara kaydırılır
+ * 'word-break' ve 'overflow-wrap' özellikleri ile çok uzun sözcükler etiketin genişliğinden büyükse alt satıra kaydırılır. 
+*/
+
+body .p-0x {
+  width: 50px;
+  border: 2px green solid;
+}
+
+body .p-0x:first-of-type {
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+body .p-0x:last-of-type {
+  word-break: break-all;
+}

@@ -1,0 +1,14 @@
+/*
+ *  'text-align' özelliği sadece block seviyesinden elemanlar için kullanılabiliyor satır seviyesinden elemanlar için etkisiz kalmaktadır.
+ * 
+ */
+
+p{
+  text-align: justify;/*İşe yarar çünkü block seviyesinde eleman*/
+  text-align-last: justify; /*Son satırı hizalamak için kullanılıyor*/
+}
+
+span{
+  text-align: justify;/*İşe yaramayacaktır çünkü satır içi seviyede eleman*/
+}
+

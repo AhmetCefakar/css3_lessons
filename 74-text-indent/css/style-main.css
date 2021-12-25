@@ -1,0 +1,9 @@
+/*
+ * 'text-indent' özelliği ile blok elemanlarında ilk satırın sağa/sola kaydırma işlemleri yapılır.
+ * Bu özellik geçiş etkisi olan Carosel/banner gibi elemanların altlarında çıkan elle geçiş yapmaya yarayan
+ * kısımlarda yazıları ekranda görülmeyecek şekilde olmasını sağlamak için kullanılabilir(eksi değer vermek suratiyle). 
+ */
+
+ body p:first-of-type{
+  text-indent: 15px;
+}

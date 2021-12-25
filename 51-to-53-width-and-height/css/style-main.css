@@ -1,0 +1,32 @@
+/*
+ * 'width', 'height', 'min-width', 'min-height', 'max-width' ve 'max-height' özellikleri sadece blok seviyesindeki elemanlarda geçerlidir satır içi elemanlarda geçerli değildir.
+ * 'width: 50%;' bu tanımlama ile etki edilecek elemanın ebeveyn'inin boyutunun yüzdelik karşılığı alınır. 
+ * 'width: min-content' tanımlaması ile satır içi seviyedeki bir elemanın en büyük boyuttaki elemanı kadar genişlik değeri verilmiş olur.
+ *
+ */
+
+div.box-00 {
+  width: 300px;
+  height: 400px;
+  background-color: turquoise;
+}
+
+span{
+  background-color: lime;
+}
+
+
+div.box-01{
+  background-color: magenta;
+  width: min-content;
+}
+
+div.box-02{
+  background-color: mediumslateblue;
+  width: max-content;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+}
+
+

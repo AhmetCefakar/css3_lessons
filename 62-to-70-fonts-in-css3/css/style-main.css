@@ -1,0 +1,37 @@
+/*
+ * 'font-family' özelliği ile kullanılacak olan metin karakterlerinin türü tanımlanıyor, birden fazla tanımlanabiliyor.
+ * Özel font kullanılacağı zaman kullanılacak olan font dosyasını yülküyor olmak gerekiyor ve 'font-face' ile kullanmak gerekiyor(ileriki konularda geçiyor)
+ *
+ * 'font-size' değerinin varsayılan değeri '16px'dir.
+ * 'em': Bir üst ebeveyn'in sahip olduğu font-size değerini referans alacak şekilde yazı boyutu vermek için kullanılan ölçüdür.
+ * 'rem': Html etiketi'nin sahip olduğu font-size değerini referans alacak şekilde yazı boyutu vermek için kullanılan ölçüdür.
+ * 'font-variant': Bu kullanım ile büyük harfle kullanılan metin aynı aralıkta bulunan küçük metinlere göre boyutlanmaktadır.
+ * 'font-weight': Bu özellik metinlerin kalınlık/incelik değerlerinin tanımlanmasını sağlıyor, 1-1000 arasında değer alabiliyor(H1-H6 etiketlerinin boyutlanması bu özellik ile yapılıyor)
+ * 'line-height': Bu özellik satırlar arasındaki uzaklığın belirlenmesini sağlar.
+ * 'letter-spacing': Bu özellik ile harfler arasındaki mesafe ayarlanıyor('normal' değeri verildiğinde olması gereken varsayılan değeri tanımlanmış olur).
+ * 'word-spacing': Bu özellik ile sözcükler arasındaki mesafe ayarlanıyor('normal' değeri verildiğinde olması gereken varsayılan değeri tanımlanmış olur).
+ */
+
+html{
+  font-size: 30px;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+body p{
+  /* font-size: 15px; */
+  font-size: 1em;
+}
+
+body > span{
+  font-size: 1rem;
+  font-style: italic;
+}
+
+div span{
+  font-variant: all-small-caps;
+}
+

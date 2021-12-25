@@ -1,0 +1,20 @@
+/*
+ * 'text-transform' özelliği ile metinlerin görünümleri(büyük/küçük karakter olarak görünüm)
+ * Bu özelliğin kullanımında bazı Karakterlerin büyük/küçük harf çevrimleirnde sorunlar oluşabiliyor(Türkçe karakterlerde)
+*/
+
+body .p-01 {
+  text-transform: none;
+}
+
+body .p-02 {
+  text-transform: uppercase;
+}
+
+body .p-03 {
+  text-transform: lowercase;
+}
+
+body .p-04 {
+  text-transform: capitalize;
+}

@@ -1,0 +1,77 @@
+/*
+ * 'background-color' özelliği ile arka plan rengi verilir.
+ * 'background-image' özelliği ile arka plan resmi veriliyor, brden fazla arkaplan resmi kullanılıbiliyor.
+ * 'background-repeat' özelliği ile arka plan resminin tekrarlama koşulu verilir.
+ * 'background-position' özelliği ile arka plan resminin konunu tayin edilir.
+ * 'background-clip' özelliği ile arka plan renginin kapsam aralığı belirleniyor.
+ * 'background-origin' özelliği de va ama çok kullanışlı değil, istenirse araştırılabilir.
+ * 'background-size' özelliği ile arkaplan resminin boyutları tanımlanıyor, sabit olarak ya da ebeveyn etikete göre ayarlanacak şekilde kullanılabiliyor.
+ * 'background-attachment' özelliği ile arkaplan resminin sayfa aşağıya yukarıya oynatıldığında konumunun belirlenmesi için kullanılıyor.
+ * 'background' özelliği ile tüm background özellikleri tek satırda verilebili.
+*/
+
+html {
+  height: 1500px;
+}
+
+body{
+  height: 1500px;
+}
+
+/*Birden fazla arkaplan resmi kullanımı*/
+/* 
+body {
+  background-color: turquoise;
+  background-image: url(../book.png), url(../vegetables-food-shop-pattern-background-vector.jpg);
+  background-repeat: no-repeat, repeat;
+} 
+*/
+
+/* 
+body p{
+  background-color: tomato;
+} 
+*/
+
+body{
+  background-image: url(../book.png);
+  background-repeat: no-repeat;
+  background-position: right; /*Sağ ortalı*/
+  background-position: top center; /*üst ortalı*/
+  background-position: bottom left; /*alt sol*/
+  background-position: 50% 50%; /*Sayfa ortasında*/
+  background-position: bottom 15% left 27px; /*Alttan yüksekliğin %15'i uzakta ve soldan 27px uzakta*/
+}
+
+.box-01{
+  padding:30px;
+  border: 10px dashed black;
+  font-size: 20px;
+  text-align: center;
+  background-color: lime;
+  background-clip: content-box;
+}
+
+.box-02{
+  width: 700px;
+  height: 400px;
+  padding:30px;
+  border: 10px dashed black;
+  background-image: url(../book.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.box-03{
+  width: 700px;
+  height: 400px;
+  padding:30px;
+  border: 10px dashed black;
+  background-image: url(../book.png);
+  background-repeat: repeat-y;
+  /* background-position: center; */
+  background-size: 25px;
+}
+
+

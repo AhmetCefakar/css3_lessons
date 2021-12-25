@@ -29,7 +29,7 @@ div span[title*="asdf"]{
     background-color: yellowgreen;
 }
 
-/*Attribute değerinde ... geçen etiketlere css verme işlemi(büyük-küçük harf duyarsız olarak çalışır)[sona eklenen 'i' case in sensitive anlamına gelir]*/
+/*Attribute değerinde ... geçen etiketlere css verme işlemi(büyük-küçük harf duyarsız olarak çalışır)[sona eklenen 'i' case insensitive anlamına gelir]*/
 div span[title*="asxy" i]{
     background-color: blue;
 }

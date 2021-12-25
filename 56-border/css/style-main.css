@@ -1,0 +1,24 @@
+/*
+ * 'border' ile verilen genişlik elemanın boyutunu etkilemektedir, 'outline' ile verilen genişlik ise elemanın genişliğini etkilemiyor elemanın dışına cizgi çizmek için kullanılıyor
+ * Seçilen html elemanına kenarlık vermekle ilgili işlemler genelde sade olacak şekile kullanılıyor.
+ *
+ */
+
+div.box-01 {
+  background-color: mediumturquoise;
+  width: 250px;
+  height: 300px;
+  border-style: solid;
+  /* border-color: transparent; */
+  border-width: 2px;
+  border-collapse: collapse;
+}
+
+input{
+  outline: none;
+  border:3px solid thistle;
+}
+
+input:focus{
+  border-color: #2e4 violet;
+}

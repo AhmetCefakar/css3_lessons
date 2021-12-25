@@ -1,0 +1,15 @@
+/*
+ * 'border' ile verilen genişlik elemanın boyutunu etkilemektedir, 'outline' ile verilen genişlik ise elemanın genişliğini etkilemiyor
+ * elemanın dışına cizgi çizmek için kullanılıyor, diğer elemanları alta kaydırma gibi bir etki oluşturmuyor.
+ *
+ */
+
+div.box-01 {
+  background-color: mediumturquoise;
+  width: 250px;
+  height: 300px;
+  margin: 100px auto;
+  border: 5px solid tomato;
+  outline: teal dashed 7px;
+  outline-offset: 70px;
+}

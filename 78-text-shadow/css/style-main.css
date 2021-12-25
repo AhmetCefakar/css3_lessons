@@ -1,0 +1,13 @@
+/*
+ * 'text-shadow' özelliği ile metne gölge verilir.
+ * 'text-shadow: YataydaGölge DikeydeGölge Bulanıklık Renk' şklinde kullanılır.
+*/
+
+body h2{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 3px turquoise, 5px 7px 0 pink, 0 30px 3px red;
+}
+
+body p{
+  background-color: tomato;
+}

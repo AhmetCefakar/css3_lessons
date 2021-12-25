@@ -1,0 +1,15 @@
+/*
+ * 'box-sizing: border-box' ile elemana verilen border genişliği elemanın kendi boyutundan kullanılırak gösteriliyor ve fazladan dışarı bir genişleme olmuyor(border ve padding hesabı içindir).
+ */
+
+*{
+  box-sizing: border-box;
+}
+
+div.box-01 {
+  background-color: mediumturquoise;
+  width: 200px;
+  height: 200px;
+  margin: 100px auto;
+  border: 5px solid tomato;
+}

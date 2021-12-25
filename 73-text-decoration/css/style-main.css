@@ -1,0 +1,51 @@
+/*
+ *  'text-decoration' özelliği ile yazıları belirtmek için farklı şekilde çizittirme işlemleri yapılıyor.
+ * 
+ */
+
+#div-01{
+  text-decoration-color: aqua;
+  -moz-text-decoration-color: aqua;
+  text-decoration-line: overline;
+  -moz-text-decoration-line: overline;
+  text-decoration-style: solid;
+  -moz-text-decoration-style: solid;
+}
+
+#div-02{
+  text-decoration-color: turquoise;
+  -moz-text-decoration-color: turquoise;
+  text-decoration-line: line-through;
+  -moz-text-decoration-line: line-through;
+  text-decoration-style: double;
+  -moz-text-decoration-style: double;
+}
+
+#div-03{
+  text-decoration-color: tomato;
+  -moz-text-decoration-color: tomato;
+  text-decoration-line: overline underline;
+  -moz-text-decoration-line: overline underline;
+  text-decoration-style: dotted;
+  -moz-text-decoration-style: dotted;
+}
+
+#div-04{
+  text-decoration-color: turquoise;
+  -moz-text-decoration-color: turquoise;
+  text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+  text-decoration-style: wavy;
+  -moz-text-decoration-style: wavy;
+}
+
+h3#h3-01{
+  text-decoration: underline lime wavy;
+}
+
+/* 'h3#h3-01' etiketine 'text-decoration' verilmiştir ama bu etietin altındaki bir etiketin 'text-decoration' özelliği 'none' yapılsa da 
+   çocuk etiketin ebeveyn'in 'text-decoration' özelliği geçerli olmaya devam eder!
+*/
+h3#h3-01 span{
+  text-decoration: none;
+}

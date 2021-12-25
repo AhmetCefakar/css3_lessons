@@ -1,0 +1,9 @@
+/*
+ * 'white-space' özelliğine 'pre-wrap', 'pre' değerleri verildiğinde sayfada kullanılan metinlerin aynen yazıldığı gibi görünmesini ayarlamak için kullanılabiliyor.
+ *  '<pre>' etiketi varsayılan olarak 'white-space:pre' tanımlamasına sahiptir ondan bu etiken içinde yazılan ifadeler düzenlenmeden olduğu giib görünür. 
+ *  
+*/
+
+ body .white-space-example{
+  white-space: pre-wrap;
+}

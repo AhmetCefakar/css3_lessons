@@ -1,0 +1,93 @@
+/*
+ * css3 'linear-gradient(yön, ilk renk, son renkler)' fonksiyonu ile renk geçişi efektleri verilebiliyor('background-image' özelliğine bu fonksiyon tanımlanıyor)
+ * css3 'radial-gradient(yön, ilk renk, son renkler)' fonksiyonu ile dairesel renk geçişi efektleri verilebiliyor('background-image' özelliğine bu fonksiyon tanımlanıyor)
+ * 'gradient' oluşturmak için kullanılan siteler bu sitelerden karmaşık desenlerin nasıl oluşturulabileceği öğrenilebilir;
+ * 1) https://projects.verou.me/css3patterns/
+ * 2) http://standardista.com/cssgradients/
+*/
+
+/*İki rengin kullanıldığı*/
+.box-01{
+  width: 200px;
+  height: 200px;
+  /* background-image: linear-gradient(to top, red, lightblue); */
+  background-image: linear-gradient(to top right, red, lightblue);
+}
+
+/*Çok renk kullanımı*/
+.box-02{
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to top right, red, blue, green, lime, yellow);
+}
+
+/*Çoklu renklerin kapladığı alanların yükdesel olarak belirlenmesi*/
+.box-03{
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(red 0 10%, blue 20% 30%, green 40% 50%, lime 60% 70%, yellow 80%);
+}
+
+/*Bir resime renk geçişi verilmesi*/
+.box-04{
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(to right, transparent, blue), 
+                    linear-gradient(to left, transparent, red), 
+                    url(../money.png);
+  background-repeat: no-repeat;
+}
+
+/*Dairesel olarak renk geçisi vermek*/
+.box-05{
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(at center right, red 0 10%, blue);
+}
+
+/*Konik olarak renk geçisi vermek*/
+.box-06{
+  width: 200px;
+  height: 200px;
+  background-image: conic-gradient(from 225deg, red 0 10%, blue);
+}
+
+/*Tekrarlı olarak dairesel renk geçisi vermek*/
+.box-07{
+  width: 200px;
+  height: 200px;
+  background-image: repeating-radial-gradient(red 0 3%, blue 3% 6%);
+}
+
+/*Tekrarlı olarak doğrosal renk geçisi vermek*/
+.box-08{
+  width: 200px;
+  height: 200px;
+  background-image: repeating-linear-gradient(to top, white 0 3%, black 3% 6%),
+                    repeating-linear-gradient(to right, white 0 3%, black 3% 6%);
+}
+
+/*Tekrarlı olarak konik renk geçisi vermek*/
+.box-09{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-image: repeating-conic-gradient(blue 0deg 30deg, green 30deg 60deg, pink 60deg 90deg);                    repeating-linear-gradient(to right, white 0 3%, black 3% 6%);
+}
+
+/*Tekrarlı olarak doğrosal renk geçisi vermek*/
+.box-10{
+  width: 400px;
+  height: 400px;
+  background-color:white;
+  background-image:
+    radial-gradient(midnightblue 9px, transparent 10px),
+    repeating-radial-gradient(midnightblue 0, midnightblue 4px, transparent 5px, transparent 20px, midnightblue 21px, midnightblue 25px, transparent 26px, transparent 50px);
+  background-size: 30px 30px, 90px 90px;
+  /* background-position: 0 0; */
+}
+

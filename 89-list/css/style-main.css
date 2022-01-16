@@ -1,0 +1,14 @@
+/*
+ * css3 'list-style' özellikleri ile 'ul, ol' listelerse düzenleme yapılabiliyor, bu şekilde sitelerde özel menüler oluşturulabiliyor.
+ * 
+*/
+
+ol li{
+  /* list-style: none; */
+  list-style: upper-latin;
+  /* list-style: upper-roman; */
+  /* list-style-position: inside; */
+  /* list-style-image: url(../money.png); */
+  /* counter:  */
+}
+

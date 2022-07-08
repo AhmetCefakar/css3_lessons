@@ -1,0 +1,38 @@
+/*
+ * Görünüz seviyeleri iki tanedr => 1) Block seviyesi eleman(block), 2) Satır için seviye eleman(inline)
+ * Html'de bir etiketin görünüz seviyesi değiştirilemiyor(span: satır seviyesinde br elemandır, div, p: block seviyesinde bir elemandır)
+ * Css ile etiketlerin görünüm seviyeleri değiştirilebilir, bu şekilde stenilen her etiket istenildiği gibi konumlandırılabilir
+ * 
+ * 'Satır için seviye' elemanlara bazı(width, height, padding vb.) css özellikleri etki etmez.  
+ *  
+ * 'display' alabileceği değerlerden burada değinilenler(bunlar dışında çok daha fazla değer alabiliyor);
+ * 1) none : Bu değer verilen eleman gizlenir(sayfada böyle bir eleman yokmuş gibi olur)
+ * 2) inline : Satır içi eleman özelliği
+ * 3) block : Block seviyesi eleman özelliği
+ * 4) inline-block : Bu özellin verilen eleman block seviyesinde davranır ama kendinden sonra gelen inline elemanlar 
+ *    gelirse alt satıra kaymazlar tâ ki block seviyesinde eleman gelene kadar
+ * 5) 'table' ile başlayan değerler ile de table oluşturulabiliyor, varsayılan table etketleri kullanılmadan varsayılan ya da özelleştirilmiş
+ *     bir table oluşturulabilir 'display' kullanılarak.
+ * 
+ * 
+ * 
+ * Eğer bir eleman görünmes istenmiyor ama sayfada kapladı alan kalması isteniyorsa 'visibility' özelliği kullanılmalıdır,
+ * 'visibility' iki değer alabiliyor bunlar 'visibile' ve 'hidden' değerleridir  
+ *
+ *
+ *
+*/
+
+span.inline-block-span{
+  width: 110px;
+  height: 110px;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+div.div-inline{
+  width: 110px;
+  height: 110px;
+  background-color: blueviolet;
+  display: inline;
+}
